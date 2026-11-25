@@ -2,7 +2,7 @@
 
 // ---- Your links: fill these in and the buttons appear automatically ----
 export const PROFILE = {
-  linkedin: "", // e.g. "https://www.linkedin.com/in/your-handle/"
+  linkedin: "https://www.linkedin.com/in/mehtadevenn/",
   email: "",    // e.g. "you@example.com"
 };
 
