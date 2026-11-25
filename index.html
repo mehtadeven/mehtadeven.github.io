@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deven Mehta — AI/ML Builder · Portfolio</title>
+  <meta name="description" content="Deven Mehta — IT student and AI/ML builder from Ahmedabad. A 3D journey from first line of code to machine learning: six ML projects, each running live in your browser.">
+  <meta name="author" content="Deven Mehta">
+  <meta name="theme-color" content="#0b0f1a">
+  <link rel="canonical" href="https://mehtadeven.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mehtadeven.github.io/">
+  <meta property="og:title" content="Deven Mehta — AI/ML Builder">
+  <meta property="og:description" content="A 3D journey from my first line of code to machine learning. Six ML projects — try every one live in your browser.">
+  <meta property="og:image" content="https://mehtadeven.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Deven Mehta — AI/ML Builder. Six machine-learning projects, live in your browser.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deven Mehta — AI/ML Builder">
+  <meta name="twitter:description" content="A 3D journey from my first line of code to machine learning. Six ML projects, live in your browser.">
+  <meta name="twitter:image" content="https://mehtadeven.github.io/assets/img/og-image.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/orbitron-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="assets/vendor/three.module.min.js">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Deven Mehta",
+    "jobTitle": "AI/ML Builder · IT Student",
+    "url": "https://mehtadeven.github.io/",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressCountry": "IN" },
+    "alumniOf": "SAL College of Engineering",
+    "knowsAbout": ["Machine Learning", "Natural Language Processing", "Computer Vision", "Python", "scikit-learn", "FastAPI", "React"],
+    "sameAs": ["https://github.com/mehtadeven", "https://instagram.com/dev.builds"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- ===================== NAV ===================== -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#top" aria-label="Deven Mehta — back to top">
+      <span class="logo-mark">DM</span>
+      <span class="logo-name">DEVEN MEHTA</span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#journey" class="hide-sm"><span class="num">01</span>Journey</a>
+      <a href="#projects"><span class="num">02</span>Projects</a>
+      <a href="#stack" class="hide-sm"><span class="num">03</span>Stack</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Layer progress (desktop) -->
+  <nav class="hud" id="hud" aria-label="Journey layers">
+    <a href="#layer-1"><span class="lab">L1 · Hello, World</span><span class="dot"></span></a>
+    <a href="#layer-2"><span class="lab">L2 · Python &amp; data</span><span class="dot"></span></a>
+    <a href="#layer-3"><span class="lab">L3 · Computer vision</span><span class="dot"></span></a>
+    <a href="#layer-4"><span class="lab">L4 · Language</span><span class="dot"></span></a>
+    <a href="#layer-5"><span class="lab">L5 · Recommenders</span><span class="dot"></span></a>
+    <a href="#layer-6"><span class="lab">L6 · Shipping</span><span class="dot"></span></a>
+    <a href="#layer-7"><span class="lab">L7 · What's next</span><span class="dot"></span></a>
+  </nav>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" data-station="0">
+      <div class="container">
+        <div class="hero-inner">
+          <p class="eyebrow">// AI/ML builder <span class="dim">·</span> Ahmedabad, India</p>
+          <h1 class="display"><span class="line">DEVEN</span><span class="line grad">MEHTA</span></h1>
+          <p class="tagline">I turn raw data into working AI — and put it where anyone can try it.</p>
+          <p class="intro">IT student at SAL College of Engineering. Six machine-learning projects built in public, every one running live in your browser. Scroll to follow the journey — from my first line of code to the models I'm training next.</p>
+          <div class="terminal" aria-label="raw data, then model, then working app">
+            <span class="prompt">$</span><span class="typed" id="typed">raw data → model → working app</span><span class="caret"></span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="#journey">Start the journey
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <a class="btn ghost" href="#projects">Try the live projects</a>
+          </div>
+          <div class="icon-links">
+            <a class="icon-link" href="https://github.com/mehtadeven" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a class="icon-link" href="" data-profile="linkedin" aria-label="LinkedIn" title="LinkedIn" hidden>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a class="icon-link" href="https://instagram.com/dev.builds" aria-label="Instagram @dev.builds" title="Instagram @dev.builds">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a class="icon-link" href="" data-profile="email" aria-label="Email" title="Email" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">scroll</div>
+    </section>
+
+    <!-- ===================== JOURNEY ===================== -->
+    <section id="journey" aria-labelledby="journey-title">
+      <div class="container journey-intro">
+        <div class="section-head reveal">
+          <p class="eyebrow">01 // The forward pass</p>
+          <h2 id="journey-title">Every network turns an input into an output, one layer at a time. <span class="grad">Here's mine.</span></h2>
+          <p>Seven layers, from curiosity to machine learning. Each one added something the next layer needed.</p>
+        </div>
+      </div>
+
+      <article class="layer" id="layer-1" data-station="1">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 01 · Input</span><span class="when">2024</span></div>
+            <h3>Hello, World.</h3>
+            <p>In 2024 I started a <strong>Diploma in Information Technology</strong> (GTU) and opened this GitHub account. Logic, programming fundamentals and the web — HTML, CSS and JavaScript. The goal was simple: understand how software actually works.</p>
+            <div class="chips"><span class="chip">Diploma in IT · GTU</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Git</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-2" data-station="2">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 02 · Python &amp; data</span><span class="when">learning to speak data</span></div>
+            <h3>Data in, insight out.</h3>
+            <p>Python became my main language. With <strong>NumPy, pandas and scikit-learn</strong> I learned the loop every project now follows — <strong>data → clean → model → evaluate → deploy</strong> — and to report results honestly, including where a model falls short.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">NumPy</span><span class="chip">pandas</span><span class="chip">scikit-learn</span><span class="chip">pytest</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-3" data-station="3">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 03 · Computer vision</span><span class="when">Digit Recognizer</span></div>
+            <h3>Teaching a computer to see.</h3>
+            <p>An SVM and a 200-tree Random Forest, trained on <strong>1,797 handwritten digits</strong> of 8×8 pixels and compared head to head. That glowing <strong>7</strong> is a real test image from the dataset.</p>
+            <div class="metric"><span class="big grad">98.89%</span><span class="lbl">SVM test accuracy<br>vs 96.39% Random Forest</span></div>
+            <div class="links">
+              <a class="btn sm" href="https://mehtadeven.github.io/digit-recognizer-ml/">▶ Draw a digit</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/digit-recognizer-ml">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-4" data-station="4">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 04 · Natural language</span><span class="when">3 projects</span></div>
+            <h3>Teaching a computer to read.</h3>
+            <p>One idea, three tools: <strong>TF-IDF</strong> turns text into numbers, <strong>cosine similarity</strong> compares them.</p>
+            <div class="mini-projects">
+              <a href="https://mehtadeven.github.io/text-summarizer-ai/"><span><span class="t">Text Summarizer</span><span class="d">Keeps an article's key sentences, word for word.</span></span><span class="go">live ↗</span></a>
+              <a href="https://mehtadeven.github.io/ai-chatbot-python/"><span><span class="t">DevBot</span><span class="d">A chatbot that admits when it doesn't know.</span></span><span class="go">live ↗</span></a>
+              <a href="https://mehtadeven.github.io/resume-job-matcher/"><span><span class="t">Resume-Job Matcher</span><span class="d">Shows the job keywords a resume is missing.</span></span><span class="go">live ↗</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-5" data-station="5">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 05 · Recommender systems</span><span class="when">Movie Recommender</span></div>
+            <h3>Finding what's similar.</h3>
+            <p><strong>60 Indian and international films</strong>, each described by genre and keyword tags. Cosine similarity finds the neighbours: pick <em>3 Idiots</em> and you get <strong>Chhichhore (21.4%)</strong>, Munna Bhai MBBS and Dil Chahta Hai — no ratings or user history needed.</p>
+            <div class="links">
+              <a class="btn sm" href="https://mehtadeven.github.io/movie-recommender-ai/">▶ Get recommendations</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/movie-recommender-ai">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-6" data-station="6">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 06 · Shipping a product</span><span class="when">SpamSMS Guardian</span></div>
+            <h3>From script to real product.</h3>
+            <p>A full-stack app: <strong>React + TypeScript</strong> front end, <strong>FastAPI</strong> backend, explainable <strong>SPAM / SAFE / UNSURE</strong> verdicts, six local phishing checks, accounts and Stripe-ready billing — plus a test that blocks the network to prove it works fully offline.</p>
+            <div class="chips"><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">Naive Bayes</span><span class="chip">GitHub Actions</span></div>
+            <div class="links">
+              <a class="btn sm" href="https://mehtadeven.github.io/spam-sms-checker/">▶ Check a message</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/spam-sms-checker">Code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="layer" id="layer-7" data-station="7">
+        <div class="container">
+          <div class="layer-card">
+            <div class="layer-tag"><span class="l">Layer 07 · Output</span><span class="when">2026 → next</span></div>
+            <h3>What I'm training next.</h3>
+            <p>Now doing a <strong>B.E. in Information Technology</strong> at SAL College of Engineering (2026–2029). Learning <strong>n8n</strong> automation, local LLMs with <strong>Ollama</strong> and <strong>MongoDB</strong>; next up, deep learning with <strong>TensorFlow and PyTorch</strong>.</p>
+            <p>The output I'm aiming for: an <strong>AI/ML internship</strong> where I learn from a real team and ship models people use.</p>
+            <div class="links">
+              <a class="btn sm" href="#contact">Let's talk</a>
+              <a class="btn sm ghost" href="#projects">See all projects</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section panel" id="projects" data-station="8" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">02 // Projects</p>
+          <h2 id="projects-title">Six projects. <span class="grad">All live.</span></h2>
+          <p>No screenshots — each one runs in your browser with the same model as its Python version. Click "Live demo" and try it.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal">
+            <div class="top"><span class="no">01 · NLP</span><span class="icon" aria-hidden="true">📄</span></div>
+            <span class="live">LIVE</span>
+            <h3>Resume-Job Matcher</h3>
+            <p>Scores a resume against a job post and lists the exact keywords it's missing — the screening an ATS does, made visible.</p>
+            <div class="result">Sample: <b>46.7%</b> keyword coverage — flags Docker, APIs and embeddings as gaps.</div>
+            <div class="chips"><span class="chip">TF-IDF</span><span class="chip">cosine similarity</span><span class="chip">scikit-learn</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/resume-job-matcher/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/resume-job-matcher">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="top"><span class="no">02 · Full-stack ML</span><span class="icon" aria-hidden="true">🛡️</span></div>
+            <span class="live">LIVE</span>
+            <h3>SpamSMS Guardian</h3>
+            <p>Checks a text message for spam and phishing — risky links, URL shorteners, OTP requests — and explains every verdict.</p>
+            <div class="result">Says <b>UNSURE</b> instead of guessing when a message matches too little known vocabulary.</div>
+            <div class="chips"><span class="chip">FastAPI</span><span class="chip">React + TS</span><span class="chip">Naive Bayes</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/spam-sms-checker/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/spam-sms-checker">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="top"><span class="no">03 · Computer vision</span><span class="icon" aria-hidden="true">✍️</span></div>
+            <span class="live">LIVE</span>
+            <h3>Digit Recognizer</h3>
+            <p>Draw a digit and an SVM recognises it. Compares a Support Vector Machine with a Random Forest on the same split.</p>
+            <div class="result"><b>98.89%</b> test accuracy (SVM) vs <b>96.39%</b> (Random Forest).</div>
+            <div class="chips"><span class="chip">SVM</span><span class="chip">Random Forest</span><span class="chip">scikit-learn</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/digit-recognizer-ml/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/digit-recognizer-ml">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="top"><span class="no">04 · NLP</span><span class="icon" aria-hidden="true">🤖</span></div>
+            <span class="live">LIVE</span>
+            <h3>DevBot</h3>
+            <p>Answers questions about me and my work — and says "I don't know" instead of making things up, logging what it couldn't answer.</p>
+            <div class="result">Below <b>0.3</b> similarity it admits it doesn't know. Honest by design.</div>
+            <div class="chips"><span class="chip">intent matching</span><span class="chip">TF-IDF</span><span class="chip">Python</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/ai-chatbot-python/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/ai-chatbot-python">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="top"><span class="no">05 · Recommenders</span><span class="icon" aria-hidden="true">🎬</span></div>
+            <span class="live">LIVE</span>
+            <h3>Movie Recommender</h3>
+            <p>Pick a film you like and get the most similar titles from a 60-film catalogue, with genre filters.</p>
+            <div class="result">"3 Idiots" → <b>Chhichhore</b> (21.4%), Munna Bhai MBBS, Dil Chahta Hai.</div>
+            <div class="chips"><span class="chip">content-based</span><span class="chip">pandas</span><span class="chip">cosine similarity</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/movie-recommender-ai/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/movie-recommender-ai">Code</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="top"><span class="no">06 · NLP</span><span class="icon" aria-hidden="true">📝</span></div>
+            <span class="live">LIVE</span>
+            <h3>Text Summarizer</h3>
+            <p>Pulls the most important sentences out of a long article — word for word and in order — plus its top keywords.</p>
+            <div class="result">Extractive and fully explainable: see every sentence's <b>TF-IDF score</b>.</div>
+            <div class="chips"><span class="chip">extractive</span><span class="chip">TF-IDF</span><span class="chip">scikit-learn</span></div>
+            <div class="actions">
+              <a class="btn sm" href="https://mehtadeven.github.io/text-summarizer-ai/">Live demo</a>
+              <a class="btn sm ghost" href="https://github.com/mehtadeven/text-summarizer-ai">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== STACK + NUMBERS ===================== -->
+    <section class="section" id="stack" data-station="8" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">03 // Stack</p>
+          <h2 id="stack-title">The tools behind the layers.</h2>
+        </div>
+        <div class="stack">
+          <div class="stack-group reveal"><h3>Core ML</h3><div class="chips"><span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">NumPy</span><span class="chip">pandas</span><span class="chip">matplotlib</span></div></div>
+          <div class="stack-group reveal"><h3>Web &amp; product</h3><div class="chips"><span class="chip">FastAPI</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span><span class="chip">HTML / CSS / JS</span><span class="chip">Three.js</span></div></div>
+          <div class="stack-group reveal"><h3>Practice</h3><div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">pytest</span><span class="chip">GitHub Actions</span><span class="chip">GitHub Pages</span></div></div>
+          <div class="stack-group next reveal"><h3>Learning next</h3><div class="chips"><span class="chip">n8n</span><span class="chip">Ollama</span><span class="chip">MongoDB</span><span class="chip">TensorFlow</span><span class="chip">PyTorch</span></div></div>
+        </div>
+
+        <div class="numbers reveal" aria-label="By the numbers">
+          <div><div class="n grad">6</div><div class="t">projects shipped</div></div>
+          <div><div class="n grad">6</div><div class="t">live browser demos</div></div>
+          <div><div class="n grad">52</div><div class="t">automated tests</div></div>
+          <div><div class="n grad">3,700+</div><div class="t">lines of Python</div></div>
+          <div><div class="n grad">98.89%</div><div class="t">best test accuracy</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section" id="education" data-station="8" aria-labelledby="edu-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">04 // Education</p>
+          <h2 id="edu-title">Where I'm learning.</h2>
+        </div>
+        <div class="timeline">
+          <div class="edu reveal">
+            <div class="years">2026 – 2029</div>
+            <div><h3>B.E. in Information Technology <span class="now">NOW</span></h3><p>SAL College of Engineering, Ahmedabad</p></div>
+          </div>
+          <div class="edu reveal">
+            <div class="years">2024 – 2026</div>
+            <div><h3>Diploma in Information Technology</h3><p>Gujarat Technological University (GTU)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact" id="contact" data-station="8" aria-labelledby="contact-title">
+      <div class="container reveal">
+        <p class="eyebrow">05 // Let's connect</p>
+        <h2 id="contact-title">Hiring an AI/ML intern?<br><span class="grad">Let's build something.</span></h2>
+        <p>Open to AI/ML internships and freelance projects. The fastest way to reach me is LinkedIn or Instagram.</p>
+        <div class="hero-actions">
+          <a class="btn" href="" data-profile="linkedin" hidden>
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+            Connect on LinkedIn
+          </a>
+          <a class="btn ghost" href="https://github.com/mehtadeven">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+            GitHub
+          </a>
+          <a class="btn ghost" href="https://instagram.com/dev.builds">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>
+            @dev.builds
+          </a>
+          <a class="btn ghost" href="" data-profile="email" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+            Email me
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 Deven Mehta · Ahmedabad, India</span>
+      <span>Built with Three.js · hosted on <a href="https://github.com/mehtadeven/mehtadeven.github.io">GitHub Pages</a></span>
+    </div>
+  </footer>
+
+  <script type="module" src="assets/js/site.js"></script>
+  <script type="module" src="assets/js/scene.js"></script>
+</body>
+</html>
